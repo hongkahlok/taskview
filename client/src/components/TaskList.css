@@ -1,0 +1,41 @@
+/* TaskList.css */
+
+.task-list {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.task-item {
+  position: relative; /* Make the task-item a relative container */
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+  background-color: #d4edda; /* Subtle green background for completed tasks */
+}
+
+.task-info {
+  text-align: left;
+}
+
+.edit-task-button {
+  position: absolute;
+  top: 10px; /* Adjust this value to control vertical positioning */
+  right: 10px; /* Adjust this value to control horizontal positioning */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-task-button:hover {
+  background-color: #0056b3;
+}
